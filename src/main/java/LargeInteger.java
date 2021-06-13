@@ -8,49 +8,52 @@ public class LargeInteger {
     private final char[] digits = {};
 
     public LargeInteger() {
-        // TODO: completar
+        // TODO: implementar
     }
 
     public LargeInteger(long value) {
-        // TODO: completar
+        // TODO: implementar
+        System.out.println(value); // delete me
     }
 
     public LargeInteger(LargeInteger value) {
-        // TODO: completar
+        // TODO: implementar
+        System.out.println(value); // delete me
     }
 
     public LargeInteger(String value) throws IllegalArgumentException {
-        // TODO: completar
+        // TODO: implementar
+        System.out.println(value); // delete me
     }
 
     public int size() {
-        // TODO: completar
+        // TODO: implementar
         return 0;
     }
 
     public LargeInteger plus(LargeInteger value) {
-        // TODO: completar
+        // TODO: implementar
         return new LargeInteger();
     }
 
     public LargeInteger ninesComplement() {
-        // TODO: completar
+        // TODO: implementar
         return new LargeInteger();
     }
 
     public LargeInteger minus(LargeInteger value) {
-        // TODO: completar
+        // TODO: implementar
         return new LargeInteger();
     }
 
     public int compareTo(LargeInteger value) {
-        // TODO: completar
+        // TODO: implementar
         return 0;
     }
 
     @Override
     public String toString() {
-        // TODO: completar
+        // TODO: implementar
         return "";
     }
 
