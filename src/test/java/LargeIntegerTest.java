@@ -17,40 +17,40 @@ public class LargeIntegerTest {
             while (scanner.hasNext()) {
                 var strA = scanner.next();
                 var strB = scanner.next();
-                var a = new LargeIntegerSolution(strA);
-                var b = new LargeIntegerSolution(strB);
-                var complementA = new LargeIntegerSolution(scanner.next());
-                var complementB = new LargeIntegerSolution(scanner.next());
+                var a = new LargeInteger(strA);
+                var b = new LargeInteger(strB);
+                var complementA = new LargeInteger(scanner.next());
+                var complementB = new LargeInteger(scanner.next());
                 var compareAb = Integer.parseInt(scanner.next());
                 var compareBa = Integer.parseInt(scanner.next());
-                var plusAb = new LargeIntegerSolution(scanner.next());
-                var plusBa = new LargeIntegerSolution(scanner.next());
-                var minusAb = new LargeIntegerSolution(scanner.next());
-                var minusBa = new LargeIntegerSolution(scanner.next());
+                var plusAb = new LargeInteger(scanner.next());
+                var plusBa = new LargeInteger(scanner.next());
+                var minusAb = new LargeInteger(scanner.next());
+                var minusBa = new LargeInteger(scanner.next());
 
-                Assertions.assertEquals(complementA, new LargeIntegerSolution(a).ninesComplement(),
+                Assertions.assertEquals(complementA, new LargeInteger(a).ninesComplement(),
                     String.format("%s has wrong 9's complement", strA));
-                Assertions.assertEquals(complementB, new LargeIntegerSolution(b).ninesComplement(),
+                Assertions.assertEquals(complementB, new LargeInteger(b).ninesComplement(),
                     String.format("%s has wrong 9's complement", strA));
                 Assertions
                     .assertEquals(compareAb,
-                        new LargeIntegerSolution(a).compareTo(new LargeIntegerSolution(b)),
+                        new LargeInteger(a).compareTo(new LargeInteger(b)),
                         String.format("%s compared to %b lead to wrong result", strA, strB));
                 Assertions
                     .assertEquals(compareBa,
-                        new LargeIntegerSolution(b).compareTo(new LargeIntegerSolution(a)),
+                        new LargeInteger(b).compareTo(new LargeInteger(a)),
                         String.format("%s compared to %b lead to wrong result", strB, strA));
                 Assertions.assertEquals(plusAb,
-                    new LargeIntegerSolution(a).plus(new LargeIntegerSolution(b)),
+                    new LargeInteger(a).plus(new LargeInteger(b)),
                     String.format("%s + %s lead to wrong result", strA, strB));
                 Assertions.assertEquals(plusBa,
-                    new LargeIntegerSolution(b).plus(new LargeIntegerSolution(a)),
+                    new LargeInteger(b).plus(new LargeInteger(a)),
                     String.format("%s + %s lead to wrong result", strB, strA));
                 Assertions.assertEquals(minusAb,
-                    new LargeIntegerSolution(a).minus(new LargeIntegerSolution(b)),
+                    new LargeInteger(a).minus(new LargeInteger(b)),
                     String.format("%s - %s lead to wrong result", strA, strB));
                 Assertions.assertEquals(minusBa,
-                    new LargeIntegerSolution(b).minus(new LargeIntegerSolution(a)),
+                    new LargeInteger(b).minus(new LargeInteger(a)),
                     String.format("%s - %s lead to wrong result", strB, strA));
 
             }
