@@ -31,7 +31,7 @@ public class LargeIntegerTest {
                 Assertions.assertEquals(complementA, new LargeInteger(a).ninesComplement(),
                     String.format("%s has wrong 9's complement", strA));
                 Assertions.assertEquals(complementB, new LargeInteger(b).ninesComplement(),
-                    String.format("%s has wrong 9's complement", strA));
+                    String.format("%s has wrong 9's complement", strB));
                 Assertions
                     .assertEquals(compareAb,
                         new LargeInteger(a).compareTo(new LargeInteger(b)),
